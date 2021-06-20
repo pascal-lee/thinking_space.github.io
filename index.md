@@ -1,11 +1,28 @@
-Untitled
+My investing
 ================
 
-## GitHub Documents
+## Macro economics
 
-This is an R Markdown format used for publishing markdown documents to
-GitHub. When you click the **Knit** button all R code chunks are run and
-a markdown file (.md) suitable for publishing to GitHub is generated.
+    ## 'getSymbols' currently uses auto.assign=TRUE by default, but will
+    ## use auto.assign=FALSE in 0.5-0. You will still be able to use
+    ## 'loadSymbols' to automatically load data. getOption("getSymbols.env")
+    ## and getOption("getSymbols.auto.assign") will still be checked for
+    ## alternate defaults.
+    ## 
+    ## This message is shown once per session and may be disabled by setting 
+    ## options("getSymbols.warning4.0"=FALSE). See ?getSymbols for details.
+
+    ## [1] "DGS10"
+
+    ##            DGS10
+    ## 2021-06-09  1.50
+    ## 2021-06-10  1.45
+    ## 2021-06-11  1.47
+    ## 2021-06-14  1.51
+    ## 2021-06-15  1.51
+    ## 2021-06-16  1.57
+
+![](index_files/figure-gfm/unnamed-chunk-1-1.png)<!-- -->
 
 ## Including Code
 

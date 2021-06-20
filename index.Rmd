@@ -1,15 +1,25 @@
 ---
-title: "Untitled"
+title: "My investing"
 output: github_document
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+require(ggplot2)
+require(tidyverse)
+require(tidyquant)
+require(highcharter)
 ```
 
-## GitHub Documents
+## Macro economics
+```{r, echo=FALSE}
+#tq_get(x, get = "stock.prices", complete_cases = TRUE, ...)
+#DGS10<-tq_get('DGS10',get="economic.data",from="1947-01-01", to="2021-6-17")
+getSymbols('DGS10', src='FRED')
+tail(DGS10)
 
-This is an R Markdown format used for publishing markdown documents to GitHub. When you click the **Knit** button all R code chunks are run and a markdown file (.md) suitable for publishing to GitHub is generated.
+chart_Series(DGS10,subset='2012::2021-06')
+```
 
 ## Including Code
 
